@@ -19,6 +19,15 @@
 
   <main>
     <h1>Comparison of DRP, BCP, and IRP</h1>
+
+    <p>
+      Although the <strong>Disaster Recovery Plan (DRP)</strong>, 
+      <strong>Business Continuity Plan (BCP)</strong>, 
+      and <strong>Incident Response Plan (IRP)</strong> share
+      interdependent goals, each focuses on different dimensions of preparedness
+      and response. At a high level:
+    </p>
+
     <table>
       <thead>
         <tr>
@@ -31,40 +40,104 @@
       <tbody>
         <tr>
           <td>Primary Focus</td>
-          <td>Restoring IT systems & data</td>
-          <td>Continuing overall business ops</td>
-          <td>Managing security incidents</td>
+          <td>Restoring IT systems & data (technical recovery)</td>
+          <td>Continuing overall business ops (organizational resilience)</td>
+          <td>Managing security incidents (threat detection & containment)</td>
         </tr>
         <tr>
           <td>Scope</td>
           <td>Infrastructure, backups, hardware</td>
-          <td>Entire organization</td>
-          <td>Cybersecurity threats</td>
+          <td>Entire organization (people, processes, facilities)</td>
+          <td>Cybersecurity threats & vulnerabilities</td>
         </tr>
         <tr>
           <td>Key Metrics</td>
           <td>RTO & RPO</td>
-          <td>Business Impact Analysis (BIA)</td>
-          <td>Incident detection/response times</td>
+          <td>Business Impact Analysis (BIA), downtime thresholds</td>
+          <td>Incident detection/response times, escalation metrics</td>
+        </tr>
+        <tr>
+          <td>Activation Triggers</td>
+          <td>
+            Loss of infrastructure, major IT outage,
+            or data center failures (CrashPlan, 2023)
+          </td>
+          <td>
+            Any event threatening normal operations
+            (e.g., natural disasters, supply chain collapse, staff unavailability)
+          </td>
+          <td>
+            Security breaches, malware incidents, insider threats,
+            advanced persistent threats (TraceSecurity, 2023)
+          </td>
         </tr>
         <tr>
           <td>Testing Frequency</td>
-          <td>Semi-annual or annual</td>
-          <td>Annual or bi-annual drills</td>
-          <td>Frequent (tabletop exercises)</td>
+          <td>
+            Semi-annual or annual (often integrated with BCP drills)
+          </td>
+          <td>
+            Annual/bi-annual drills involving cross-functional teams (JPMorgan, 2025)
+          </td>
+          <td>
+            Frequent tabletop exercises & post-incident reviews (CISA, 2025)
+          </td>
         </tr>
         <tr>
           <td>IT Auditor's Role</td>
-          <td>Verify backups, compliance</td>
-          <td>Check coverage, resilience</td>
-          <td>Assess detection & response readiness</td>
+          <td>
+            Verify backups, compliance with frameworks (e.g., NIST 800-34),
+            confirm RTO/RPO feasibility
+          </td>
+          <td>
+            Check coverage of critical functions, ensure synergy
+            with DRP, confirm stakeholder communication strategies
+          </td>
+          <td>
+            Assess detection & response readiness, review IRP
+            alignment with NIST SP 800-61 & escalation protocols
+          </td>
         </tr>
       </tbody>
     </table>
+
+    <h2>Holistic Integration</h2>
+    <p>
+      In practice, <strong>DRP</strong>, <strong>BCP</strong>, and <strong>IRP</strong>
+      are most effective when seamlessly integrated. For example, a small security incident
+      might be contained solely via IRP procedures. However, if the attack escalates to a
+      full-scale system outage, the <em>DRP</em> becomes crucial in restoring affected systems.
+      Simultaneously, if the outage threatens the entire organization’s ability to function,
+      the <em>BCP</em> ensures essential operations continue through alternate sites or manual
+      processes (TraceSecurity, 2023; CrashPlan, 2023).
+    </p>
+    <p>
+      Organizations achieving “mature” resilience typically unify these plans under an
+      overarching governance model, recognizing that while the DRP’s technical
+      recovery procedures are distinct from the BCP’s enterprise-wide continuity strategies
+      and the IRP’s immediate threat response tasks, all three frameworks share
+      a common goal: preserving operational stability and protecting critical assets.
+    </p>
   </main>
 
   <footer>
     <p>&copy; Built in 2025 by Mauro A. Collazo Pabón</p>
+    <hr>
+    <h3>References</h3>
+    <ul>
+      <li><a href="https://www.tracesecurity.com/blog/articles/the-difference-between-incident-response-disaster-recovery-and-business-continuity-plans">
+        TraceSecurity (2023)
+      </a></li>
+      <li><a href="https://www.crashplan.com/resources/guide/how-to-create-a-disaster-recovery-plan/">
+        CrashPlan (2023)
+      </a></li>
+      <li><a href="https://www.jpmorgan.com/insights/business/business-planning/what-is-a-business-continuity-plan">
+        JPMorgan (2025)
+      </a></li>
+      <li><a href="https://www.cisa.gov/resources-tools/resources/incident-response-plan-irp-basics">
+        CISA (2025)
+      </a></li>
+    </ul>
   </footer>
 </body>
 </html>

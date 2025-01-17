@@ -20,30 +20,78 @@
   <main>
     <h1>Disaster Recovery Plan (DRP)</h1>
     <p>
-      A Disaster Recovery Plan (DRP) is a formal document that details how 
-      an organization restores critical IT systems after events such as natural disasters, 
-      system failures, or cyberattacks.
+      A Disaster Recovery Plan is a documented, systematic approach to
+      <strong>restoring critical IT systems, data, and infrastructure</strong> following
+      events such as natural disasters, cyberattacks, or major system failures (CrashPlan, 2023).
+      The principal objective is to minimize downtime and protect organizational assets
+      from permanent loss.
     </p>
+
+    <p>
+      Modern organizations face considerable risk from both physical and cyber threats.
+      In the context of an IT environment, data unavailability or corruption can lead to severe
+      financial and reputational harm. A DRP provides a roadmap on how to reinstate mission-critical
+      operations rapidly, often involving <strong>backup and restoration procedures</strong>,
+      alternate sites, or cloud-based contingencies.
+    </p>
+
     <p>
       <strong>Key Components:</strong>
       <ul>
-        <li>Risk Assessment</li>
-        <li>Recovery Time Objectives (RTO) & Recovery Point Objectives (RPO)</li>
-        <li>Resource Inventory & Backup Procedures</li>
-        <li>Roles & Responsibilities</li>
-        <li>Testing & Updating</li>
+        <li>
+          <em>Risk Assessment & Business Impact Analysis</em>: Identifies potential threats
+          (e.g., fires, cyberattacks) and their operational impact on technology and data.
+        </li>
+        <li>
+          <em>Recovery Time Objectives (RTO) & Recovery Point Objectives (RPO)</em>:
+          Defines acceptable downtime (RTO) and allowable data loss in time (RPO) (CrashPlan, 2023).
+        </li>
+        <li>
+          <em>Resource Inventory & Backup Procedures</em>: Ensures redundancy of assets
+          (servers, networks, and data), with an emphasis on geographically separated backups.
+        </li>
+        <li>
+          <em>Roles & Responsibilities</em>: Establishes a crisis management team and
+          identifies who activates DR processes.
+        </li>
+        <li>
+          <em>Testing & Updating</em>: Routine drills (annual or semi-annual) confirm
+          the DRP’s effectiveness, with lessons learned feeding into plan revisions.
+        </li>
       </ul>
     </p>
+
     <p>
       <strong>Importance to IT Auditing:</strong> 
-      Auditors ensure the DRP is well-documented, tested, and 
-      aligns with standards. They verify backups can be restored 
-      within the defined RTO and RPO.
+      Auditors ensure the DRP aligns with industry standards
+      (e.g., NIST 800-34) and meets compliance requirements (TraceSecurity, 2023).
+      They also verify that backups are valid, offsite storage procedures are followed,
+      and RTO/RPO parameters are realistically tested. Disaster Recovery is
+      often considered a <strong>subset of broader Business Continuity</strong> initiatives
+      but zeroes in on IT restoration and data availability.
+    </p>
+
+    <p>
+      According to the <strong>FFIEC IT Business Continuity Management Booklet</strong>, DR
+      emphasizes restoring essential IT infrastructure and data repositories. Management should
+      identify the key business processes that depend on these systems, prioritize their
+      recovery order, and define how the organization returns to a “normalized state”
+      (TraceSecurity, 2023).
     </p>
   </main>
 
   <footer>
     <p>&copy; Built in 2025 by Mauro A. Collazo Pabón</p>
+    <hr>
+    <h3>References</h3>
+    <ul>
+      <li><a href="https://www.tracesecurity.com/blog/articles/the-difference-between-incident-response-disaster-recovery-and-business-continuity-plans">
+        TraceSecurity (2023)
+      </a></li>
+      <li><a href="https://www.crashplan.com/resources/guide/how-to-create-a-disaster-recovery-plan/">
+        CrashPlan (2023)
+      </a></li>
+    </ul>
   </footer>
 </body>
 </html>
